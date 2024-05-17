@@ -1,6 +1,7 @@
 import Button from "../components/Button.jsx";
 import { arrowRight } from "../assets/icons/index.js";
-import { statistics } from "../constants/index.js";
+import { shoes, statistics } from "../constants/index.js";
+import { bigShoe1 } from "../assets/images/index.js";
 
 export default function Hero() {
   return (
@@ -32,6 +33,21 @@ export default function Hero() {
                 {stat.label}
               </p>
             </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="relative flex flex-1 justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
+        <img
+          src={bigShoe1}
+          alt="Shoe collection"
+          width={610}
+          height={500}
+          className="object-contain relative z-10"
+        />
+        <div>
+          {shoes.map((shoe, index) => (
+            <div key={index}></div>
           ))}
         </div>
       </div>
