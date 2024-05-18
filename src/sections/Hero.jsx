@@ -2,6 +2,7 @@ import Button from "../components/Button.jsx";
 import { arrowRight } from "../assets/icons/index.js";
 import { shoes, statistics } from "../constants/index.js";
 import { bigShoe1 } from "../assets/images/index.js";
+import ShoeCard from "../components/ShoeCard.jsx";
 
 export default function Hero() {
   return (
@@ -47,7 +48,9 @@ export default function Hero() {
         />
         <div>
           {shoes.map((shoe, index) => (
-            <div key={index}></div>
+            <div key={index}>
+              <ShoeCard />
+            </div>
           ))}
         </div>
       </div>
