@@ -5,11 +5,13 @@ export default function Button({ label, iconUrl }) {
      leading-none bg-coral-red rounded-full text-white border-coral-red"
     >
       {label}
-      <img
-        src={iconUrl}
-        alt="Arrow Right Icon"
-        className="ml-2 rounded-full w-5 h-5"
-      />
+      {iconUrl && (
+        <img
+          src={iconUrl}
+          alt="Arrow Right Icon"
+          className="ml-2 rounded-full w-5 h-5"
+        />
+      )}
     </button>
   );
 }
