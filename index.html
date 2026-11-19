@@ -2,11 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nike Landing Page</title>
+    <meta name="description" content="Explore a sneaker collection in this independent Nike-inspired design concept." />
+    <title>Nike Collection — Design Concept</title>
   </head>
   <body>
+    <form name="collection-updates" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="company" hidden>
+      <input type="hidden" name="form-name" value="collection-updates" />
+      <input name="company" /><input type="email" name="email" />
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
