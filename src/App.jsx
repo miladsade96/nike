@@ -12,9 +12,8 @@ import Nav from "./components/Nav.jsx";
 
 export default function App() {
   return (
-    <main className="relative">
-      <Nav />
-      <section className="ml-24 xl:padding-l wide:padding-r padding-b">
+    <><a href="#main-content" className="skip-link">Skip to content</a><Nav /><main id="main-content" className="relative">
+      <section className="xl:padding-l wide:padding-r padding-b">
         <Hero />
       </section>
       <section className="padding">
@@ -38,6 +37,6 @@ export default function App() {
       <section className="bg-black padding-x padding-t pb-8 text-white">
         <Footer />
       </section>
-    </main>
+    </main></>
   );
 }
