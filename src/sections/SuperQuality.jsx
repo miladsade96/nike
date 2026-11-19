@@ -22,7 +22,7 @@ export default function SuperQuality() {
           Our dedication to detail and excellence ensures your satisfaction.
         </p>
         <div className="mt-11">
-          <Button label="View details" />
+          <Button label="Explore our services" href="#services" />
         </div>
       </div>
       <div className="flex flex-1 justify-center items-center">

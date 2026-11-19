@@ -1,3 +1,5 @@
+import { reviews } from "../constants/index.js";
+import { star } from "../assets/icons/index.js";
 export default function CustomerReviews() {
-  return <div>Customer Reviews</div>;
+ return <section className="max-container" aria-labelledby="reviews-title"><h2 id="reviews-title" className="font-palanquin text-4xl text-center font-bold">What our <span className="text-coral-red">customers</span> say</h2><p className="info-text text-center mt-4">Comfort, style, and the little details that make a difference.</p><div className="grid md:grid-cols-2 gap-12 mt-12">{reviews.map((review) => <figure key={review.customerName} className="flex flex-col items-center text-center gap-5"><img src={review.imgURL} alt="" width={100} height={100} loading="lazy" className="rounded-full object-cover size-24" /><blockquote className="info-text max-w-md">{review.feedback}</blockquote><div className="flex items-center gap-2"><img src={star} alt="" width={20} height={20} /><span aria-label={`${review.rating} out of 5 stars`}>{review.rating}</span></div><figcaption className="font-palanquin text-2xl font-bold">{review.customerName}</figcaption></figure>)}</div></section>;
 }
