@@ -5,8 +5,11 @@ export default function PopularProductCard({ imgURL, name, price }) {
     <div className="flex flex-1 flex-col w-full max-sm:w-full">
       <img
         src={imgURL}
+        loading="lazy"
+        width={280}
+        height={280}
         alt={name}
-        className="size-[280px] rounded-3xl border-2 hover:border-coral-red transition-all duration-400"
+        className="w-full aspect-square object-contain rounded-3xl border-2 hover:border-coral-red transition-all duration-400"
       />
       <div className="mt-8 flex justify-start gap-2.5">
         <img src={star} alt="Rating star" height={24} width={24} />
